@@ -1,0 +1,13 @@
+<form #registerForm="ngForm">
+  <input placeholder="nombre" [(ngModel)]="user.name" name="name" />
+  <br />
+  <input placeholder="apellido" [(ngModel)]="user.lastname" name="lastname" />
+  <br />
+  <input placeholder="edad" [(ngModel)]="user.age" name="age" />
+  <br />
+  <input placeholder="email" [(ngModel)]="user.email" name="email" />
+  <br />
+  <button>ENVIAR</button>
+
+  {{ registerForm }}
+</form>
